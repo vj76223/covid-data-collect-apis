@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateRedisModDto } from './dto/create-redis-mod.dto';
 import { UpdateRedisModDto } from './dto/update-redis-mod.dto';
+import { AppModule } from 'src/app.module';
 
 @Injectable()
 export class RedisModService {
