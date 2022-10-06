@@ -6,7 +6,7 @@ import { DoctorModule } from './doctor/doctor.module';
 import { PatientModule } from './patient/patient.module';
 
 @Module({
-  imports: [PatientModule, DoctorModule],
+  imports: [PatientModule, DoctorModule, DBModule.forRoot(options)],
   controllers: [AppController],
   providers: [AppService],
 })
